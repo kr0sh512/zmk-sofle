@@ -60,10 +60,10 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - RGUI
   - $$mdi:keyboard-space$$
   - Layer 1
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   Layer 1:
   - {t: '`', s: '~'}

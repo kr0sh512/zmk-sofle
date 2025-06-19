@@ -79,7 +79,7 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SCROLL UP
   - $$mdi:volume-low$$
   - PREVIOUS
   - $$mdi:arrow-up-bold$$
@@ -92,7 +92,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SCROLL DOWN
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$

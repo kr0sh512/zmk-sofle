@@ -16,9 +16,7 @@
 
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <500>;       // 300
-    delay-ms = <0>;                   // 0
-    trigger-period-ms = <0>;
+    time-to-max-speed-ms = <500>;       // 300                   // 0
 };
 
 &mmv {
@@ -94,11 +92,11 @@
 
         NUMLOCK {
             bindings = <
-&to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans  &to 0
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp HOME  &kp UP    &kp PG_UP  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT  &none     &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans  &trans
-&trans  &trans  &trans  &to 3   &trans  &trans    &trans  &trans  &trans    &to 3     &none      &none
+&to 0           &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans    &trans    &trans     &trans  &to 0
+&msc SCRL_UP    &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans    &trans  &trans  &kp HOME  &kp UP    &kp PG_UP  &trans  &trans
+&mkp MB3        &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &kp LEFT  &none     &kp RIGHT  &trans  &trans
+&msc SCRL_DOWN  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans  &trans
+&trans          &trans  &trans          &to 3           &trans           &trans    &trans  &trans  &trans    &to 3     &none      &none
             >;
 
             label = "Layer 4";

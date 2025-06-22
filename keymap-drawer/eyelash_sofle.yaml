@@ -112,8 +112,8 @@ layers:
   - RGB SPD
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB BRI
   - RGB BRD
+  - RGB BRI
   - PG UP
   - PG DN
   - F12

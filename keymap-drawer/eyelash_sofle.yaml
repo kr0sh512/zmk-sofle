@@ -92,12 +92,12 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: Layer 4, h: toggle}
+  - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Layer 4, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
@@ -105,7 +105,7 @@ layers:
   - END
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - $$mdi:pan-down$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
   - RGB EFF

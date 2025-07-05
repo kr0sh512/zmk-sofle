@@ -105,11 +105,11 @@
 
         Gaming {
             bindings = <
-&kp ESC  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none  &none  &none  &none  &none  &none
-&kp U    &kp TAB         &kp Q         &kp W         &kp E         &kp R           &none  &none  &none  &none  &none  &none  &none
-&kp I    &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &none  &none  &none  &none  &none  &none  &none
-&kp O    &kp LCTRL       &kp Z         &kp X         &kp C         &kp V           &none  &none  &none  &none  &none  &none  &none
-&to 0    &kp J           &kp K         &kp L         &kp SPACE     &kp ENTER       &none  &none  &none  &none  &none  &none
+&kp ESC  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none     &none           &none           &none            &none     &none
+&kp U    &kp TAB         &kp Q         &kp W         &kp E         &kp R           &none  &none     &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none     &none
+&kp I    &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &none  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none
+&kp O    &kp LCTRL       &kp Z         &kp X         &kp C         &kp V           &none  &none     &none           &none           &none            &none     &none
+&to 0    &kp J           &kp K         &kp L         &kp SPACE     &kp ENTER       &none  &mkp MB3  &kp SPACE       &none           &none            &none
             >;
 
             label = "Gaming";

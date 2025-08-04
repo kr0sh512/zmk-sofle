@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - Help
+  - '&rgblayer RGB_COLOR_HSB_VAL(182,100,50) 1'
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:mouse-left-click-outline$$
   - RGUI
   - $$mdi:keyboard-space$$
-  - Help
+  - '&rgblayer RGB_COLOR_HSB_VAL(177,100,50) 1'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   Help:
@@ -121,13 +121,13 @@ layers:
   - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Help, h: toggle, type: held}
+  - {t: Help, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Help, h: toggle, type: held alternate}
+  - {t: Help, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Cursor:

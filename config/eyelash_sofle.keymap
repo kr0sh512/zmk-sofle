@@ -117,6 +117,7 @@
                 <&kp ENTER>,
                 <&macro_release>,
                 <&kp LGUI>,
+                <&macro_wait_time 500>,
                 <&macro_tap>,
                 <&kp W &kp I &kp N &kp RET>;
 
@@ -155,11 +156,11 @@
 
         Main {
             bindings = <
-&mt GRAVE ESC    &kp N1     &kp N2        &kp N3                                        &kp N4     &kp N5          &mmv MOVE_UP     &kp N6    &kp N7     &kp N8                                     &kp N9         &kp N0     &kp BACKSPACE
-&kp TAB          &kp Q      &kp W         &kp E                                         &kp R      &kp T           &mmv MOVE_DOWN   &kp Y     &kp U      &kp I                                      &kp O          &kp P      &kp BSLH
-&kp CAPS         &kp A      &kp S         &kp D                                         &kp F      &kp G           &mmv MOVE_LEFT   &kp H     &kp J      &kp K                                      &kp L          &kp SEMI   &kp APOS
-&mt LSHFT ENTER  &kp Z      &kp X         &kp C                                         &kp V      &kp B           &mmv MOVE_RIGHT  &kp N     &kp M      &kp COMMA                                  &kp DOT        &kp FSLH   &mt RSHIFT ENTER
-&kp C_MUTE       &kp LCTRL  &kp LEFT_ALT  &rgb_mo_layer 1 RGB_COLOR_HSB_VAL(179,46,95)  &kp SPACE  &kp LEFT_GUI    &mkp LCLK        &kp RGUI  &kp SPACE  &rgb_mo_layer 1 RGB_COLOR_HSB_VAL(0,3,96)  &kp RIGHT_ALT  &kp RCTRL
+&mt GRAVE ESC    &kp N1     &kp N2        &kp N3  &kp N4     &kp N5          &mmv MOVE_UP     &kp N6    &kp N7     &kp N8     &kp N9         &kp N0     &kp BACKSPACE
+&kp TAB          &kp Q      &kp W         &kp E   &kp R      &kp T           &mmv MOVE_DOWN   &kp Y     &kp U      &kp I      &kp O          &kp P      &kp BSLH
+&kp CAPS         &kp A      &kp S         &kp D   &kp F      &kp G           &mmv MOVE_LEFT   &kp H     &kp J      &kp K      &kp L          &kp SEMI   &kp APOS
+&mt LSHFT ENTER  &kp Z      &kp X         &kp C   &kp V      &kp B           &mmv MOVE_RIGHT  &kp N     &kp M      &kp COMMA  &kp DOT        &kp FSLH   &mt RSHIFT ENTER
+&kp C_MUTE       &kp LCTRL  &kp LEFT_ALT  &mo 1   &kp SPACE  &kp LEFT_GUI    &mkp LCLK        &kp RGUI  &kp SPACE  &mo 1      &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;

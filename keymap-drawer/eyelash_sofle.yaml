@@ -56,17 +56,17 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - '&rgb_layer 1 RGB_COLOR_HSB_VAL(179,76,45)'
+  - '&rgb_mo_layer 1 RGB_COLOR_HSB_VAL(179,46,95)'
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:mouse-left-click-outline$$
   - RGUI
   - $$mdi:keyboard-space$$
-  - '&rgblayer RGB_COLOR_HSB_VAL(177,100,50) 1'
+  - '&rgb_mo_layer 1 RGB_COLOR_HSB_VAL(0,3,96)'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   Help:
-  - {t: Main, h: toggle}
+  - '&off_to_layer'
   - {t: F1, h: F11}
   - {t: F2, h: F12}
   - F3
@@ -90,14 +90,14 @@ layers:
   - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PG UP
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: Gaming, h: toggle}
+  - '&rgb_to_layer 3 RGB_COLOR_HSB_VAL(321,100,50)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -108,30 +108,30 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Cursor, h: toggle}
+  - '&rgb_to_layer 2 RGB_COLOR_HSB_VAL(177,98,31)'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&win_load'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&rgb_to_layer 2 RGB_COLOR_HSB_VAL(183,100,26)'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - PG UP
   - PG DN
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Help, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Help, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Cursor:
-  - {t: Main, h: toggle}
+  - '&off_to_layer'
   - '1'
   - '2'
   - '3'
@@ -143,7 +143,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: Main, h: toggle}
+  - '&off_to_layer'
   - $$mdi:pan-up$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
@@ -152,9 +152,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - $$mdi:arrow-up-bold$$
-  - PG UP
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
@@ -165,9 +165,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
@@ -178,9 +178,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - END
-  - $$mdi:arrow-down-bold$$
-  - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -193,8 +190,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Gaming:
   - $$mdi:keyboard-esc$$
   - '1'
@@ -248,7 +248,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Main, h: toggle}
+  - '&off_to_layer'
   - J
   - K
   - L
@@ -261,7 +261,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Settings:
-  - {t: Main, h: toggle}
+  - '&off_to_layer'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -273,7 +273,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Main, h: toggle}
+  - '&off_to_layer'
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
@@ -339,4 +339,7 @@ combos:
   k: {t: '[', s: '{'}
   l: [Main]
 - p: [1, 2, 3, 4, 8, 9, 10, 11]
-  k: {t: Settings, h: toggle}
+  k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
+- p: [55, 61]
+  k: '&rgb_to_layer 1 RGB_COLOR_HSB_VAL(0,0,99)'
+  l: [Main]

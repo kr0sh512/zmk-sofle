@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - '&rgblayer RGB_COLOR_HSB_VAL(182,100,50) 1'
+  - '&rgb_layer 1 RGB_COLOR_HSB_VAL(179,76,45)'
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:mouse-left-click-outline$$

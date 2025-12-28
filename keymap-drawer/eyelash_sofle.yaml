@@ -57,16 +57,16 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - Help
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:mouse-left-click-outline$$
   - RGUI
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   - Help
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   Help:
-  - '&off_to_layer'
+  - $$mdi:keyboard-esc$$
   - {t: F1, h: F11}
   - {t: F2, h: F12}
   - F3
@@ -80,11 +80,11 @@ layers:
   - F10
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:pan-up$$
-  - $$mdi:volume-low$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - $$mdi:arrow-up-bold$$
   - $$mdi:skip-next$$
-  - $$mdi:volume-high$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
@@ -209,7 +209,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - U
+  - '&mkp MB4'
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -222,7 +222,7 @@ layers:
   - '&mkp MB2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - I
+  - '&mkp MB5'
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -235,7 +235,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - O
+  - H
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -250,8 +250,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&off_to_layer'
   - J
-  - K
-  - L
+  - I
+  - M
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

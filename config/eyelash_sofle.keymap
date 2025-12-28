@@ -158,11 +158,11 @@
 
         Main {
             bindings = <
-&mt GRAVE ESC    &kp N1     &kp N2        &kp N3  &kp N4     &kp N5          &kp UP           &kp N6    &kp N7     &kp N8     &kp N9         &kp N0     &kp BACKSPACE
-&kp TAB          &kp Q      &kp W         &kp E   &kp R      &kp T           &kp DOWN         &kp Y     &kp U      &kp I      &kp O          &kp P      &kp BSLH
-&kp CAPS         &kp A      &kp S         &kp D   &kp F      &kp G           &kp LEFT_ARROW   &kp H     &kp J      &kp K      &kp L          &kp SEMI   &kp APOS
-&mt LSHFT ENTER  &kp Z      &kp X         &kp C   &kp V      &kp B           &kp RIGHT_ARROW  &kp N     &kp M      &kp COMMA  &kp DOT        &kp FSLH   &mt RSHIFT ENTER
-&kp C_MUTE       &kp LCTRL  &kp LEFT_ALT  &mo 1   &kp SPACE  &kp LEFT_GUI    &mkp LCLK        &kp RGUI  &kp SPACE  &mo 1      &kp RIGHT_ALT  &kp RCTRL
+&mt GRAVE ESC    &kp N1     &kp N2        &kp N3  &kp N4              &kp N5          &kp UP           &kp N6    &kp N7               &kp N8     &kp N9         &kp N0     &kp BACKSPACE
+&kp TAB          &kp Q      &kp W         &kp E   &kp R               &kp T           &kp DOWN         &kp Y     &kp U                &kp I      &kp O          &kp P      &kp BSLH
+&kp CAPS         &kp A      &kp S         &kp D   &kp F               &kp G           &kp LEFT_ARROW   &kp H     &kp J                &kp K      &kp L          &kp SEMI   &kp APOS
+&mt LSHFT ENTER  &kp Z      &kp X         &kp C   &kp V               &kp B           &kp RIGHT_ARROW  &kp N     &kp M                &kp COMMA  &kp DOT        &kp FSLH   &mt RSHIFT ENTER
+&kp C_MUTE       &kp LCTRL  &kp LEFT_ALT  &mo 1   &mt LEFT_ALT SPACE  &kp LEFT_GUI    &mkp LCLK        &kp RGUI  &mt RIGHT_ALT SPACE  &mo 1      &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -172,11 +172,11 @@
 
         Help {
             bindings = <
-&off_to_layer 0   &mt F11 F1         &mt F12 F2      &kp F3                                        &kp F4      &kp F5                                           &trans  &kp F6  &kp F7          &kp F8                                         &kp F9           &kp F10    &kp DEL
-&msc SCRL_UP      &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &kp UP                                        &kp C_NEXT  &kp C_VOLUME_UP                                  &trans  &trans  &mkp MB1        &mmv MOVE_UP                                   &mkp MB2         &kp PG_UP  &msc SCRL_UP
-&msc SCRL_DOWN    &trans             &kp LEFT        &kp DOWN                                      &kp RIGHT   &rgb_to_layer 3 RGB_COLOR_HSB_VAL(321,100,50)    &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN                                 &mmv MOVE_RIGHT  &trans     &mkp MB3
-&trans            &trans             &trans          &rgb_to_layer 2 RGB_COLOR_HSB_VAL(177,98,31)  &trans      &win_load                                        &trans  &trans  &trans          &rgb_to_layer 2 RGB_COLOR_HSB_VAL(183,100,26)  &trans           &kp PG_DN  &msc SCRL_DOWN
-&kp C_PLAY_PAUSE  &trans             &trans          &none                                         &trans      &trans                                           &trans  &trans  &trans          &none                                          &trans           &trans
+&kp ESC           &mt F11 F1  &mt F12 F2      &kp F3                                        &kp F4      &kp F5                                           &trans  &kp F6  &kp F7          &kp F8                                         &kp F9           &kp F10    &kp DEL
+&msc SCRL_UP      &trans      &kp C_PREVIOUS  &kp UP                                        &kp C_NEXT  &trans                                           &trans  &trans  &mkp MB1        &mmv MOVE_UP                                   &mkp MB2         &kp PG_UP  &msc SCRL_UP
+&msc SCRL_DOWN    &trans      &kp LEFT        &kp DOWN                                      &kp RIGHT   &rgb_to_layer 3 RGB_COLOR_HSB_VAL(321,100,50)    &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN                                 &mmv MOVE_RIGHT  &trans     &mkp MB3
+&trans            &trans      &trans          &rgb_to_layer 2 RGB_COLOR_HSB_VAL(177,98,31)  &trans      &win_load                                        &trans  &trans  &trans          &rgb_to_layer 2 RGB_COLOR_HSB_VAL(183,100,26)  &trans           &kp PG_DN  &msc SCRL_DOWN
+&kp C_PLAY_PAUSE  &trans      &trans          &none                                         &trans      &trans                                           &trans  &trans  &trans          &none                                          &trans           &trans
             >;
 
             display-name = "Help";
@@ -198,10 +198,10 @@
         Gaming {
             bindings = <
 &kp ESC          &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &none     &none           &none           &none            &none     &none
-&kp U            &kp TAB         &kp Q         &kp W         &kp E         &kp R           &none  &none     &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none     &none
-&kp I            &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &none  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none
-&kp O            &kp LCTRL       &kp Z         &kp X         &kp C         &kp V           &none  &none     &none           &none           &none            &none     &none
-&off_to_layer 0  &kp J           &kp K         &kp L         &kp SPACE     &kp ENTER       &none  &mkp MB3  &kp SPACE       &none           &none            &none
+&mkp MB4         &kp TAB         &kp Q         &kp W         &kp E         &kp R           &none  &none     &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none     &none
+&mkp MB5         &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &none  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none
+&kp H            &kp LCTRL       &kp Z         &kp X         &kp C         &kp V           &none  &none     &none           &none           &none            &none     &none
+&off_to_layer 0  &kp J           &kp I         &kp M         &kp SPACE     &kp ENTER       &none  &mkp MB3  &kp SPACE       &none           &none            &none
             >;
 
             label = "Gaming";

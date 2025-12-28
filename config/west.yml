@@ -13,10 +13,10 @@ manifest:
   projects:
     #- name: mario-peripheral-animation
     #  remote: gpeye
-    revision: v0.3 
+    #  revision: v0.3 
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3 
       import: app/west.yml
     - name: nice-view-gem #new entry
       remote: m165437 #new entry

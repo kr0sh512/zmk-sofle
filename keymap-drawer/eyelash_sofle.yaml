@@ -79,8 +79,8 @@ layers:
   - F9
   - F10
   - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
-  - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -90,10 +90,10 @@ layers:
   - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
-  - PG UP
   - $$mdi:pan-down$$
-  - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -103,12 +103,12 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
-  - PG DN
   - $$mdi:skip-previous$$
-  - PLAY PAUSE
+  - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -116,12 +116,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PG DN
   - $$mdi:pan-up$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Main, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LHelp, h: toggle}
+  - {t: RHelp, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Main, h: toggle}
@@ -129,7 +129,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LHelp, h: toggle}
+  - {t: RHelp, h: toggle}
   RHelp:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,12 +179,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
-  - PLAY PAUSE
+  - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: RHelp, h: toggle}
+  - {t: LHelp, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: RHelp, h: toggle}
+  - {t: LHelp, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   Gaming:
@@ -342,3 +342,5 @@ combos:
   k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
 - p: [61, 62, 63]
   k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
+- p: [27, 28, 29, 30]
+  k: '&rgb_to_layer 3 RGB_COLOR_HSB_VAL(312,74,51)'

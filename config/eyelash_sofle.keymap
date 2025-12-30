@@ -21,8 +21,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <3>;
+    time-to-max-speed-ms = <700>;
+    acceleration-exponent = <0.5>;
     trigger-period-ms = <16>;
 };
 
@@ -204,11 +204,11 @@
 
         Main {
             bindings = <
-&mt GRAVE ESC    &kp N1  &kp N2     &kp N3  &kp N4              &kp N5          &kp UP           &kp N6    &kp N7               &kp N8     &kp N9     &kp N0    &kp BACKSPACE
-&kp TAB          &kp Q   &kp W      &kp E   &kp R               &kp T           &kp DOWN         &kp Y     &kp U                &kp I      &kp O      &kp P     &kp BSLH
-&copy_paste      &kp A   &kp S      &kp D   &kp F               &kp G           &kp LEFT_ARROW   &kp H     &kp J                &kp K      &kp L      &kp SEMI  &kp APOS
-&mt LSHFT ENTER  &kp Z   &kp X      &kp C   &kp V               &kp B           &kp RIGHT_ARROW  &kp N     &kp M                &kp COMMA  &kp DOT    &kp FSLH  &mt RSHIFT ENTER
-&kp C_MUTE       &mo 1   &kp LCTRL  &mo 2   &mt LEFT_ALT SPACE  &kp LEFT_GUI    &rgb_toggle      &kp RGUI  &mt RIGHT_ALT SPACE  &mo 1      &kp RCTRL  &mo 2
+&mt GRAVE ESC    &kp N1  &kp N2    &kp N3  &kp N4           &kp N5          &kp UP           &kp N6    &kp N7          &kp N8     &kp N9     &kp N0    &kp BACKSPACE
+&kp TAB          &kp Q   &kp W     &kp E   &kp R            &kp T           &kp DOWN         &kp Y     &kp U           &kp I      &kp O      &kp P     &kp BSLH
+&copy_paste      &kp A   &kp S     &kp D   &kp F            &kp G           &kp LEFT_ARROW   &kp H     &kp J           &kp K      &kp L      &kp SEMI  &kp APOS
+&mt LSHFT ENTER  &kp Z   &kp X     &kp C   &kp V            &kp B           &kp RIGHT_ARROW  &kp N     &kp M           &kp COMMA  &kp DOT    &kp FSLH  &mt RSHIFT ENTER
+&kp C_MUTE       &mo 1   &kp RALT  &mo 2   &mt RCTRL SPACE  &kp LEFT_GUI    &rgb_toggle      &kp RGUI  &mt RALT SPACE  &mo 1      &kp RCTRL  &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -239,6 +239,7 @@
             >;
 
             label = "RHelp";
+            sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         Gaming {

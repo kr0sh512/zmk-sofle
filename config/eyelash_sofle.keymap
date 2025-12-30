@@ -218,11 +218,11 @@
 
         LHelp {
             bindings = <
-&trans  &mt F11 F1      &mt F12 F2  &kp F3    &kp F4      &kp F5              &trans  &kp F6             &kp F7          &kp F8          &kp F9           &kp F10         &kp DEL
-&trans  &msc SCRL_DOWN  &trans      &kp UP    &trans      &kp MINUS           &trans  &kp EQUAL          &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_DOWN  &trans
-&trans  &mkp MB3        &kp LEFT    &kp DOWN  &kp RIGHT   &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB3        &trans
-&trans  &msc SCRL_UP    &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans              &trans  &trans             &trans          &trans          &trans           &msc SCRL_UP    &trans
-&to 0   &none           &trans      &to 2     &trans      &trans              &to 0   &trans             &trans          &none           &trans           &to 2
+&trans  &mt F11 F1  &mt F12 F2  &kp F3    &kp F4      &kp F5              &trans  &kp F6             &kp F7          &kp F8          &kp F9           &kp F10         &kp DEL
+&trans  &trans      &trans      &kp UP    &trans      &kp MINUS           &trans  &kp EQUAL          &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_DOWN  &trans
+&trans  &trans      &kp LEFT    &kp DOWN  &kp RIGHT   &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB3        &trans
+&trans  &trans      &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans              &trans  &trans             &trans          &trans          &trans           &msc SCRL_UP    &trans
+&to 0   &none       &trans      &to 2     &trans      &trans              &to 0   &trans             &trans          &none           &trans           &to 2
             >;
 
             display-name = "LHelp";
@@ -231,11 +231,11 @@
 
         RHelp {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans      &trans    &trans      &trans  &trans
-&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans    &trans  &trans  &trans      &kp UP    &trans      &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &kp LEFT    &kp DOWN  &kp RIGHT   &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans  &trans
-&to 0   &to 1   &trans          &none           &trans           &trans    &to 0   &trans  &trans      &to 1     &trans      &none
+&trans  &mt F11 F1      &mt F12 F2      &kp F3          &kp F4           &kp F5              &trans  &kp F6             &kp F7      &kp F8    &kp F9      &kp F10  &kp DEL
+&trans  &msc SCRL_DOWN  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp MINUS           &trans  &kp EQUAL          &trans      &kp UP    &trans      &trans   &trans
+&trans  &mkp MB3        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp LEFT    &kp DOWN  &kp RIGHT   &trans   &trans
+&trans  &msc SCRL_UP    &trans          &trans          &trans           &trans              &trans  &trans             &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans   &trans
+&to 0   &to 1           &trans          &none           &trans           &trans              &to 0   &trans             &trans      &to 1     &trans      &none
             >;
 
             label = "RHelp";

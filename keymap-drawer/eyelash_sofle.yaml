@@ -216,10 +216,10 @@ layers:
   - E
   - R
   - $$mdi:brightness-7$$
+  - T
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB1'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB2'
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
@@ -229,11 +229,11 @@ layers:
   - D
   - F
   - RGB BRD
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB5'
+  - G
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - L
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - H
   - $$mdi:apple-keyboard-control$$
@@ -242,10 +242,10 @@ layers:
   - C
   - V
   - RGB BRI
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - B
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&off_to_layer'
@@ -254,7 +254,7 @@ layers:
   - M
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:play-pause$$
+  - RGB TOG
   - '&mkp MB3'
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -326,21 +326,21 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [21, 22]
+- p: [16, 17]
   k: {t: '=', s: +}
   l: [Main]
 - p: [34, 35]
-  k: {t: ']', s: '}'}
-  l: [Main]
-- p: [16, 17]
-  k: {t: '-', s: _}
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [Main]
 - p: [29, 30]
-  k: {t: '[', s: '{'}
+  k: {t: '-', s: _}
   l: [Main]
 - p: [53, 54, 55]
   k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
+  l: [Main]
 - p: [61, 62, 63]
   k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
+  l: [Main]
 - p: [27, 28, 29, 30]
   k: '&rgb_to_layer 3 RGB_COLOR_HSB_VAL(312,74,51)'
+  l: [Main]

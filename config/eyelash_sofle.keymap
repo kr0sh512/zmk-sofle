@@ -58,6 +58,15 @@
         tapping-term-ms = <200>;
     };
 
+    paste_on_ht: paste_on_ht {
+        compatible = "zmk,behavior-hold-tap";
+        label = "PASTE_ON_HT";
+        bindings = <&copy>, <&kt>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
     };
 
@@ -103,16 +112,19 @@
         bracket_close {
             bindings = <&kt RIGHT_BRACKET>;
             key-positions = <21 22>;
+            layers = <0>;
         };
 
         lpar {
             bindings = <&kt LEFT_PARENTHESIS>;
             key-positions = <43 42>;
+            layers = <0>;
         };
 
         rpar {
             bindings = <&kt RIGHT_PARENTHESIS>;
             key-positions = <48 47>;
+            layers = <0>;
         };
     };
 
@@ -225,11 +237,11 @@
 
         Main {
             bindings = <
-&mt GRAVE ESC    &kp N1       &kp N2           &kp N3       &kp N4          &kp N5                 &kp UP           &kp N6    &kp N7           &kp N8       &kp N9           &kp N0          &kp BACKSPACE
-&none            &kp Q        &kp W            &kp E        &kp R           &kp T                  &kp DOWN         &kp Y     &kp U            &kp I        &kp O            &kp P           &kp BSLH
-&mt TAB TAB      &mt LSHFT A  &mt RIGHT_ALT S  &mt RCTRL D  &mt LEFT_WIN F  &kp G                  &kp LEFT_ARROW   &kp H     &mt RIGHT_WIN J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RSHFT SEMI  &mt BACKSPACE APOS
-&mt LSHFT ENTER  &kp Z        &kp X            &kp C        &kp V           &kp B                  &kp RIGHT_ARROW  &kp N     &kp M            &kp COMMA    &kp DOT          &kp FSLH        &mt RSHIFT ENTER
-&kp C_MUTE       &none        &kp RALT         &mo 2        &lt 1 SPACE     &copy_on_ht 0 ENTER    &rgb_toggle      &kp RGUI  &lt 2 SPACE      &mo 1        &kp RALT         &none
+&mt GRAVE ESC                   &kp N1       &kp N2           &kp N3       &kp N4          &kp N5                 &kp UP           &kp N6                &kp N7           &kp N8       &kp N9           &kp N0          &kp BACKSPACE
+&mt RIGHT_BRACKET LEFT_BRACKET  &kp Q        &kp W            &kp E        &kp R           &kp T                  &kp DOWN         &kp Y                 &kp U            &kp I        &kp O            &kp P           &kp BSLH
+&mt TAB TAB                     &mt LSHFT A  &mt RIGHT_ALT S  &mt RCTRL D  &mt LEFT_WIN F  &kp G                  &kp LEFT_ARROW   &kp H                 &mt RIGHT_WIN J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RSHFT SEMI  &mt BACKSPACE APOS
+&mt LSHFT ENTER                 &kp Z        &kp X            &kp C        &kp V           &kp B                  &kp RIGHT_ARROW  &kp N                 &kp M            &kp COMMA    &kp DOT          &kp FSLH        &mt RSHIFT ENTER
+&kp C_MUTE                      &none        &kp RALT         &mo 2        &lt 1 SPACE     &copy_on_ht 0 ENTER    &rgb_toggle      &paste_on_ht 0 ENTER  &lt 2 SPACE      &mo 1        &kp RALT         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;

@@ -97,6 +97,30 @@
         hold-trigger-key-positions = <0 1 2 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 3>;
     };
 
+    paste_ht_new: paste_ht_new {
+        compatible = "zmk,behavior-hold-tap";
+        label = "PASTE_HT_NEW";
+        bindings = <&paste>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        quick-tap-ms = <175>;
+        tapping-term-ms = <280>;
+    };
+
+    copy_ht_new: copy_ht_new {
+        compatible = "zmk,behavior-hold-tap";
+        label = "COPY_HT_NEW";
+        bindings = <&copy>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        quick-tap-ms = <175>;
+        tapping-term-ms = <280>;
+    };
+
     behaviors {
     };
 
@@ -267,11 +291,11 @@
 
         Main {
             bindings = <
-&mt GRAVE ESC                   &kp N1                      &kp N2                          &kp N3                      &kp N4                         &kp N5                 &kp UP           &kp N6                &kp N7                           &kp N8                       &kp N9                           &kp N0                          &kp BACKSPACE
-&mt RIGHT_BRACKET LEFT_BRACKET  &kp Q                       &kp W                           &kp E                       &kp R                          &kp T                  &kp DOWN         &kp Y                 &kp U                            &kp I                        &kp O                            &kp P                           &kp BSLH
-&mt TAB TAB                     &home_row_mod_left LSHFT A  &home_row_mod_left RIGHT_ALT S  &home_row_mod_left RCTRL D  &home_row_mod_left LEFT_WIN F  &kp G                  &kp LEFT_ARROW   &kp H                 &home_row_mod_right RIGHT_WIN J  &home_row_mod_right RCTRL K  &home_row_mod_right RIGHT_ALT L  &home_row_mod_right RSHFT SEMI  &mt BACKSPACE APOS
-&mt LSHFT ENTER                 &kp Z                       &kp X                           &kp C                       &kp V                          &kp B                  &kp RIGHT_ARROW  &kp N                 &kp M                            &kp COMMA                    &kp DOT                          &kp FSLH                        &mt RSHIFT ENTER
-&kp C_MUTE                      &none                       &kp RALT                        &mo 2                       &lt 1 SPACE                    &copy_on_ht 0 ENTER    &rgb_toggle      &paste_on_ht 0 ENTER  &lt 2 SPACE                      &mo 1                        &kp RALT                         &none
+&mt GRAVE ESC                   &kp N1                      &kp N2                          &kp N3                      &kp N4                         &kp N5                  &kp UP           &kp N6                 &kp N7                           &kp N8                       &kp N9                           &kp N0                          &kp BACKSPACE
+&mt RIGHT_BRACKET LEFT_BRACKET  &kp Q                       &kp W                           &kp E                       &kp R                          &kp T                   &kp DOWN         &kp Y                  &kp U                            &kp I                        &kp O                            &kp P                           &kp BSLH
+&mt TAB TAB                     &home_row_mod_left LSHFT A  &home_row_mod_left RIGHT_ALT S  &home_row_mod_left RCTRL D  &home_row_mod_left LEFT_WIN F  &kp G                   &kp LEFT_ARROW   &kp H                  &home_row_mod_right RIGHT_WIN J  &home_row_mod_right RCTRL K  &home_row_mod_right RIGHT_ALT L  &home_row_mod_right RSHFT SEMI  &mt BACKSPACE APOS
+&mt LSHFT ENTER                 &kp Z                       &kp X                           &kp C                       &kp V                          &kp B                   &kp RIGHT_ARROW  &kp N                  &kp M                            &kp COMMA                    &kp DOT                          &kp FSLH                        &mt RSHIFT ENTER
+&kp C_MUTE                      &none                       &kp RALT                        &mo 2                       &lt 1 SPACE                    &copy_ht_new 0 ENTER    &rgb_toggle      &paste_ht_new 0 ENTER  &lt 2 SPACE                      &mo 1                        &kp RALT                         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;

@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: LHelp}
   - {t: '$$mdi:keyboard-return$$', h: '&copy'}
   - '&rgb_toggle'
-  - {t: '$$mdi:keyboard-return$$', h: '&copy'}
+  - {t: '$$mdi:keyboard-return$$', h: '&paste'}
   - {t: '$$mdi:keyboard-space$$', h: RHelp}
   - LHelp
   - $$mdi:apple-keyboard-option$$

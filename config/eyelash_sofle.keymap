@@ -52,7 +52,7 @@
     copy_on_ht: copy_on_ht {
         compatible = "zmk,behavior-hold-tap";
         label = "COPY_ON_HT";
-        bindings = <&copy>, <&kt>;
+        bindings = <&copy>, <&kp>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
@@ -62,7 +62,7 @@
     paste_on_ht: paste_on_ht {
         compatible = "zmk,behavior-hold-tap";
         label = "PASTE_ON_HT";
-        bindings = <&paste>, <&kt>;
+        bindings = <&paste>, <&kp>;
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
@@ -164,19 +164,19 @@
         };
 
         bracket_close {
-            bindings = <&kt RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <21 22>;
             layers = <0>;
         };
 
         lpar {
-            bindings = <&kt LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <43 42>;
             layers = <0>;
         };
 
         rpar {
-            bindings = <&kt RIGHT_PARENTHESIS>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <48 47>;
             layers = <0>;
         };

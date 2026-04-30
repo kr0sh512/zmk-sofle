@@ -345,11 +345,11 @@ combos:
   k: '&rgb_to_layer 3 RGB_COLOR_HSB_VAL(312,74,51)'
   l: [Main]
 - p: [21, 22]
-  k: {t: ']', h: toggle, s: '}'}
+  k: {t: ']', s: '}'}
   l: [Main]
 - p: [43, 42]
-  k: {t: (, h: toggle}
+  k: (
   l: [Main]
 - p: [48, 47]
-  k: {t: ), h: toggle}
+  k: )
   l: [Main]

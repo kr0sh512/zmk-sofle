@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
+  - RGB HUI
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-down-bold$$
+  - RGB HUD
   - Y
   - U
   - I
@@ -29,15 +29,15 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:keyboard-tab$$', h: '&win_space_tgl'}
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: LEFT WIN}
+  - S
+  - D
+  - F
   - G
-  - $$mdi:arrow-left-bold$$
+  - RGB BRD
   - H
-  - {t: J, h: RIGHT WIN}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - J
+  - K
+  - L
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '''', h: '$$mdi:backspace$$', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-right-bold$$
+  - RGB BRI
   - N
   - M
   - {t: ',', s: <}
@@ -57,11 +57,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - RHelp
-  - {t: '$$mdi:keyboard-space$$', h: LHelp}
-  - {t: '$$mdi:keyboard-return$$', h: '&copy'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', h: LEFT WIN}
   - '&rgb_toggle'
-  - {t: '$$mdi:keyboard-return$$', h: '&paste'}
-  - {t: '$$mdi:keyboard-space$$', h: RHelp}
+  - {t: '$$mdi:keyboard-return$$', h: RIGHT WIN}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
   - LHelp
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -122,12 +122,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Main, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   RHelp:
@@ -191,7 +191,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Main, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -248,7 +248,7 @@ layers:
   - $$mdi:skip-next$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&off_to_layer'
+  - RGB TOG
   - J
   - I
   - M
@@ -337,10 +337,10 @@ combos:
   l: [Main]
 - p: [53, 54, 55]
   k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
-  l: [Main]
+  l: [Main, Gaming]
 - p: [61, 62, 63]
   k: '&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)'
-  l: [Main]
+  l: [Main, Gaming]
 - p: [27, 28, 29, 30]
   k: '&rgb_to_layer 3 RGB_COLOR_HSB_VAL(312,74,51)'
   l: [Main]
@@ -353,3 +353,5 @@ combos:
 - p: [48, 47]
   k: )
   l: [Main]
+- p: [60, 56]
+  k: {t: '$$mdi:backspace$$', type: backspace}

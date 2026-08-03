@@ -140,13 +140,13 @@
         settings {
             bindings = <&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)>;
             key-positions = <53 54 55>;
-            layers = <0>;
+            layers = <0 3>;
         };
 
         set_l {
             bindings = <&rgb_to_layer 4 RGB_COLOR_HSB_VAL(64,100,50)>;
             key-positions = <61 62 63>;
-            layers = <0>;
+            layers = <0 3>;
         };
 
         gaming_mode {
@@ -171,6 +171,11 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <48 47>;
             layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <60 56>;
         };
     };
 
@@ -297,11 +302,11 @@
 
         Main {
             bindings = <
-&mt GRAVE ESC                   &kp N1                      &kp N2                          &kp N3                      &kp N4                         &kp N5                  &kp UP           &kp N6                 &kp N7                           &kp N8                       &kp N9                           &kp N0                          &kp BACKSPACE
-&mt RIGHT_BRACKET LEFT_BRACKET  &kp Q                       &kp W                           &kp E                       &kp R                          &kp T                   &kp DOWN         &kp Y                  &kp U                            &kp I                        &kp O                            &kp P                           &kp BSLH
-&change_lang_ht 0 TAB           &home_row_mod_left LSHFT A  &home_row_mod_left RIGHT_ALT S  &home_row_mod_left RCTRL D  &home_row_mod_left LEFT_WIN F  &kp G                   &kp LEFT_ARROW   &kp H                  &home_row_mod_right RIGHT_WIN J  &home_row_mod_right RCTRL K  &home_row_mod_right RIGHT_ALT L  &home_row_mod_right RSHFT SEMI  &mt BACKSPACE APOS
-&mt LSHFT ENTER                 &kp Z                       &kp X                           &kp C                       &kp V                          &kp B                   &kp RIGHT_ARROW  &kp N                  &kp M                            &kp COMMA                    &kp DOT                          &kp FSLH                        &mt RSHIFT ENTER
-&kp C_MUTE                      &none                       &kp RALT                        &mo 2                       &lt 1 SPACE                    &copy_ht_new 0 ENTER    &rgb_toggle      &paste_ht_new 0 ENTER  &lt 2 SPACE                      &mo 1                        &kp RALT                         &none
+&mt GRAVE ESC                   &kp N1                      &kp N2    &kp N3  &kp N4           &kp N5                &rgb_ug RGB_HUI  &kp N6               &kp N7           &kp N8     &kp N9    &kp N0                          &kp BACKSPACE
+&mt RIGHT_BRACKET LEFT_BRACKET  &kp Q                       &kp W     &kp E   &kp R            &kp T                 &rgb_ug RGB_HUD  &kp Y                &kp U            &kp I      &kp O     &kp P                           &kp BSLH
+&change_lang_ht 0 TAB           &home_row_mod_left LSHFT A  &kp S     &kp D   &kp F            &kp G                 &rgb_ug RGB_BRD  &kp H                &kp J            &kp K      &kp L     &home_row_mod_right RSHFT SEMI  &mt BACKSPACE APOS
+&mt LSHFT ENTER                 &kp Z                       &kp X     &kp C   &kp V            &kp B                 &rgb_ug RGB_BRI  &kp N                &kp M            &kp COMMA  &kp DOT   &kp FSLH                        &mt RSHIFT ENTER
+&kp C_MUTE                      &none                       &kp RALT  &mo 2   &mt RCTRL SPACE  &mt LEFT_WIN ENTER    &rgb_toggle      &mt RIGHT_WIN ENTER  &mt RCTRL SPACE  &mo 1      &kp RALT  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -341,7 +346,7 @@
 &mkp MB4         &kp TAB         &kp Q         &kp W         &kp E         &kp R           &kp C_BRI_DEC    &kp T         &none           &kp UP_ARROW    &none            &none         &none
 &mkp MB5         &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &rgb_ug RGB_BRD  &kp G         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp L         &none
 &kp H            &kp LCTRL       &kp Z         &kp X         &kp C         &kp V           &rgb_ug RGB_BRI  &kp B         &kp C_PREV      &kp C_PP        &kp C_NEXT       &none         &none
-&off_to_layer 0  &kp J           &kp I         &kp M         &kp SPACE     &kp ENTER       &rgb_ug RGB_TOG  &mkp MB3      &kp SPACE       &none           &none            &none
+&rgb_ug RGB_TOG  &kp J           &kp I         &kp M         &kp SPACE     &kp ENTER       &rgb_ug RGB_TOG  &mkp MB3      &kp SPACE       &none           &none            &none
             >;
 
             label = "Gaming";
